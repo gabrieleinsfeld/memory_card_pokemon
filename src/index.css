@@ -1,0 +1,55 @@
+:root {
+  --color1: #222831; /* First color */
+  --color2: #393e46; /* Second color */
+  --color3: #f96d00; /* Third color */
+  --color4: #f2f2f2; /* Fourth color */
+}
+
+body {
+  margin: 0px;
+  height: 100%;
+  background-color: var(--color2);
+}
+
+#root {
+  padding: 50px;
+}
+
+#cardContainer {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.card {
+  background-color: var(--color4);
+  box-sizing: border-box;
+  padding: 80px 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 8px rgb(0, 0, 0.4);
+  border: #f96d00 solid 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 4px 8px rgb(0, 0, 0.4);
+  background-color: var(--color3);
+}
+
+h1,
+h4 {
+  text-align: center;
+  color: var(--color4);
+  font-family: "Roboto", sans-serif;
+}
